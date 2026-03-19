@@ -1,0 +1,72 @@
+/* Gruvbox Material Dark */
+
+:root {
+
+  /* Backgrounds */
+  --bg-dim:           #141617;
+  --bg-0:             #1D2021;
+  --bg-1:             #282828;
+  --bg-2:             #282828;
+  --bg-3:             #3C3836;
+  --bg-4:             #3C3836;
+  --bg-5:             #504945;
+
+  /* Diff */
+  --bg-diff-red:      #3C1F1E;
+  --bg-diff-green:    #32361A;
+  --bg-diff-blue:     #0D3138;
+
+  /* Statusline */
+  --bg-statusline-1:  #282828;
+  --bg-statusline-2:  #32302F;
+  --bg-statusline-3:  #504945;
+  --bg-current-word:  #32302F;
+
+  /* Visual Selection */
+  --bg-visual-red:    #442E2D;
+  --bg-visual-green:  #333E34;
+  --bg-visual-blue:   #2E3B3B;
+  --bg-visual-yellow: #473C29;
+  --bg-visual-purple: #3C333B;
+
+  /* Foreground */
+  --fg-0:             #D4BE98;
+  --fg-1:             #DDC7A1;
+
+  /* Palette */
+  --red:              #EA6962;
+  --green:            #A9B665;
+  --blue:             #7DAEA3;
+  --yellow:           #D8A657;
+  --purple:           #D3869B;
+  --orange:           #E78A4E;
+  --aqua:             #89B482;
+
+  /* Greys */
+  --grey-0:           #7C6F64;
+  --grey-1:           #928374;
+  --grey-2:           #A89984;
+
+  /* Website Standards */
+  --color-background:       var(--bg-0);
+  --color-background-soft:  var(--bg-1);
+  --color-background-muted: var(--bg-3);
+
+  --color-surface:          var(--bg-2);
+  --color-border:           var(--bg-5);
+
+  --color-text:             var(--fg-0);
+  --color-text-soft:        var(--fg-1);
+  --color-text-muted:       var(--grey-1);
+  --color-text-subtle:      var(--grey-0);
+
+  --color-primary:          var(--yellow);
+  --color-secondary:        var(--blue);
+  --color-accent:           var(--aqua);
+
+  --color-success:          var(--green);
+  --color-warning:          var(--orange);
+  --color-danger:           var(--red);
+  --color-info:             var(--purple);
+
+}
