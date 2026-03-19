@@ -7,7 +7,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server/server.js"
+    "dev": "nodemon server/server.js",
+    "glog": "git -c color.ui=always log --pretty=format:'%C(yellow)[*] %h%C(reset) | %C(green)%an%C(reset) | %s' --name-status | awk '/^[AMDCRUTXB]\\t/ { if ($1==\"A\") printf \"\\033[32m%s\\033[0m\\t%s\\n\",$1,$2; else if ($1==\"M\") printf \"\\033[33m%s\\033[0m\\t%s\\n\",$1,$2; else if ($1==\"D\") printf \"\\033[31m%s\\033[0m\\t%s\\n\",$1,$2; else if ($1==\"R\") printf \"\\033[36m%s\\033[0m\\t%s\\n\",$1,$2; else printf \"\\033[35m%s\\033[0m\\t%s\\n\",$1,$2; next } { print }' | bat --paging=always --plain"
   },
   "dependencies": {
     "express": "^5.2.1"
