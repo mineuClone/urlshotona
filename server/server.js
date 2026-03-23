@@ -9,7 +9,15 @@ let db = {};
 const port = process.env.PORT || 8080;
 
 app.use(logger);
-app.use(express.static("public"));
+import path from "path";
+
+
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+app.use(express.static(path.join(__dirname, "../public")));
 
 app.set("trust proxy", 1);
 
@@ -53,6 +61,8 @@ function logger(req, res, next) {
   next();
 }
 
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`Server running on port ${port}`);
+// });
+
+export default app;
