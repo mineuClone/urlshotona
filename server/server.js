@@ -6,6 +6,8 @@ const app = express();
 
 let db = {};
 
+const port = process.env.PORT || 8080;
+
 app.use(logger);
 app.use(express.static("public"));
 
@@ -51,6 +53,6 @@ function logger(req, res, next) {
   next();
 }
 
-app.listen(3000, () => {
-  console.log("Server running on port 3000");
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
 });
